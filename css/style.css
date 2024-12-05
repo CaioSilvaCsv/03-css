@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .3rem;
+}
+nav img{
+    width: 5rem;
+    border-radius: 1rem;
+    box-shadow: -5px 5px 5px gray;
+}
+
+nav h1{
+    font-family: 'Sixtyfour Convergence', sans-serif;
+    font-size: 2rem;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    margin: .1rem;
+}
+#menu a{
+    text-decoration: none;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-top: 2rem;
+}
+#rede-social{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.rede-social{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: .2rem;
+}
+
+.footer{
+    height: 5rem;
+    width: 15rem;
+}
+
+footer img{
+    width: 1.5rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+main img{
+    width: 6rem;
+    height: 5rem;
+}
+#texto{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
