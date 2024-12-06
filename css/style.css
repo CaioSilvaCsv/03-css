@@ -75,7 +75,7 @@ main{
     flex-direction: row;
     margin: 3rem;
 }
-main img{
+#convite{
     width: 6rem;
     height: 5rem;
 }
@@ -83,5 +83,38 @@ main img{
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
+}
 
+#qr{
+    width: 10rem;
+}
+
+main h2{
+    font-family: 'Literata', serif;
+    font-weight: 200;
+}
+
+.perfil{
+    box-shadow: -2px 5px 10px 1px ;
+    border-radius: 2rem;
+    padding: 2rem;
+} 
+#perfil{
+    width: 10rem;
+    border-radius: 100%;
+}
+.descricao{
+    margin-left: 2rem;
+}
+
+.vitoria{
+    background-color: #48A0BB;
+    box-shadow: #353A3C;
+    /*#48A0BB #508191 #32BCE5 #495F66 #353A3C*/
+}
+
+.arthur{
+    background-color: #BB3A2E;
+    box-shadow: #3B2D2C;
+    /*#3B2D2C #663F3B #E62412 #91433C #BA3A2F #BB3A2E*/
 }
