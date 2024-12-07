@@ -4,4 +4,4 @@
 
 ## Atividade 03 - CSS
 
-Essa atividade é para parecer sobre os conhecimentos css.
+O foco é: Praticar habilidades de desenvolvimento web, utilizando criatividade e explorando layouts e estilos diversos.
