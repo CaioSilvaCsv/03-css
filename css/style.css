@@ -6,21 +6,18 @@
     padding: 0;
 }
 
-
-
 nav{
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin: .3rem;
+    margin: .2rem .6rem;    
 }
 nav img{
     width: 5rem;
     border-radius: 1rem;
     box-shadow: -5px 5px 5px gray;
 }
-
 nav h1{
     font-family: 'Sixtyfour Convergence', sans-serif;
     font-size: 2rem;
@@ -59,6 +56,8 @@ footer{
 .footer{
     height: 5rem;
     width: 15rem;
+    align-items: center;
+    justify-content: center;
 }
 
 footer img{
@@ -69,10 +68,15 @@ footer p{
     text-align: center;
 }
 
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
 
 main{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 3rem;
 }
 #convite{
@@ -104,8 +108,31 @@ main h2{
     border-radius: 100%;
 }
 .descricao{
-    margin-left: 2rem;
+    margin: 1rem;
+    width: 30rem;
 }
+.contato a{
+    color:black;
+    display: flex;
+    align-items: center;
+}
+#contato{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.contato img{
+    width: 1.5rem;
+}
+.corpo_cartao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 
 .vitoria{
     background-color: #48A0BB;
@@ -117,4 +144,13 @@ main h2{
     background-color: #BB3A2E;
     box-shadow: #3B2D2C;
     /*#3B2D2C #663F3B #E62412 #91433C #BA3A2F #BB3A2E*/
+}
+.max{
+    background-color: blue;
+    box-shadow: rgb(18, 18, 68)
+}
+
+.nifane{
+    background-color: purple;
+    box-shadow: rgb(65, 19, 65);
 }
