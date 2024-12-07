@@ -7,6 +7,7 @@
 }
 
 nav{
+    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -31,12 +32,14 @@ nav h1{
     text-decoration: none;
 }
 footer{
+    border-top: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     justify-items: center;
     margin-top: 2rem;
 }
+
 #rede-social{
     display: flex;
     flex-direction: column;
@@ -64,8 +67,17 @@ footer img{
     width: 1.5rem;
 }
 
-footer p{
+.footer {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    text-justify: center;
+}
+
+footer.fim{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 ul{
@@ -73,6 +85,9 @@ ul{
     text-decoration: none;
 }
 
+body{
+    background-color: whitesmoke;
+}
 main{
     display: flex;
     flex-direction: row;
@@ -87,6 +102,10 @@ main{
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+.descricao li, .descricao p{
+    margin-top: .3em;
 }
 
 #qr{
@@ -108,7 +127,7 @@ main h2{
     border-radius: 100%;
 }
 .descricao{
-    margin: 1rem;
+    margin:  0rem 1rem;
     width: 30rem;
 }
 .contato a{
@@ -117,10 +136,13 @@ main h2{
     align-items: center;
 }
 #contato{
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
+}
+
+#contato li{
+    padding: 1rem;
 }
 
 .contato img{
@@ -133,11 +155,70 @@ main h2{
     justify-content: space-around;
 }
 
+form{
+    width: 100%;
+}
+form, form>button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 30em;
+}
+
+.form > input{
+    height: 3rem;
+    font-family: monospace;
+}
+
+.form>input, .form>textarea{
+    width: 20rem;
+    text-align: center;
+}
+.form{
+    margin: .7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enviar{
+    width: 6em;
+    height: 3em;
+    background-color: green;
+    color: white;
+    border-radius: .3rem;
+    font-family: 'Literata', serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 
 .vitoria{
+    color: white;
     background-color: #48A0BB;
     box-shadow: #353A3C;
     /*#48A0BB #508191 #32BCE5 #495F66 #353A3C*/
+}
+
+.vitoria a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.vitoria.contato{
+    background: rgb(72,160,187);
+    background: linear-gradient(139deg, rgba(72,160,187,1) 0%, rgba(50,188,229,1) 25%, rgba(53,58,60,1) 100%);
 }
 
 .arthur{
@@ -145,12 +226,31 @@ main h2{
     box-shadow: #3B2D2C;
     /*#3B2D2C #663F3B #E62412 #91433C #BA3A2F #BB3A2E*/
 }
+
+.arthur.contato{
+    background: rgb(240,31,0);
+    background: linear-gradient(139deg, rgba(240,31,0,1) 0%, rgba(215,154,148,1) 26%, rgba(145,67,60,1) 90%);
+}
 .max{
-    background-color: blue;
-    box-shadow: rgb(18, 18, 68)
+    color: white;
+    background-color: #C52C21;
+    box-shadow: rgb(51, 15, 15);
 }
 
-.nifane{
-    background-color: purple;
-    box-shadow: rgb(65, 19, 65);
+.max.contato{
+    background: rgb(240,31,0);
+    background: linear-gradient(139deg, rgba(240,31,0,1) 0%, rgba(0,92,239,1) 26%, rgba(255,255,255,1) 90%);
+}
+
+.video{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#video{
+    border-radius: .4rem;
+    aspect-ratio: 16 / 9;
+    height: 30rem;
 }

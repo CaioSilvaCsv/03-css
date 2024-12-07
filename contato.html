@@ -18,29 +18,42 @@
             <ul>            
                 <li><a href="index.html">Home</a></li>
                 <li><a href="convite01.html">Vitoria</a></li>
-                <li><a href="convite02.html">Arthur/a></li>
+                <li><a href="convite02.html">Arthur</a></li>
                 <li><a href="convite03.html">Max</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
     </nav>
     <main>
-        <div class="perfil nifane">
-            <img id="perfil" src="images/nifane.jpg" alt="Foto de Nifane">
-            <h2>Nífane</h2>
-            <img id="qr" src="images/qrNina.png" alt="qrcode para o contato com Nifane">
-        </div>
-        <div class="corpo_cartao">
-            <div class="descricao perfil">
-                <p>Essa é Nífane, uma pessoa muito legal que está estudando</p>
-                <p>
-                    <strong>Formação: </strong> Tecnica em informática pelo IFNMG - Salinas <br>
-                    Cursa Bacharelado de Sistemas de informação no IFNMG - Salinas.
-                </p>
+        <form>
+            <div class="formulario">
+                <div class="form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" >
+                </div>
+
+                <div class="form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu endereço de e-mail" >
+                </div>
+
+                <div class="form">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                </div>
+                
+                <div class="form">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
+                
             </div>
-        </div>
+            <div class="formulario botao">
+                <button id="enviar" type="submit">Enviar</button>
+            </div>
+        </form>
     </main>
-    <footer>
+    <footer class="fim">
         <div class="footer">
             <p>Contatos</p>
         </div>
